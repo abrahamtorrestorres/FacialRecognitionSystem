@@ -108,13 +108,3 @@ The application will automatically create the following files and directories in
 ├── members.db            # (Auto-created) SQLite database for member data
 └── acceso_gimnasio.csv   # (Auto-created) Log of all successful entries
 ```
-
-## Future Improvements
-
-This project serves as a solid foundation. Here are some ideas for future enhancements:
-*   **Upgrade Face Recognition Model:** Implement a more robust, deep-learning-based model like FaceNet, dlib, or DeepFace for higher accuracy and resistance to variations in lighting and pose.
-*   **Live Verification Stream:** Instead of a separate "capture" window, perform recognition directly on a live video stream shown in the main UI.
-*   **Asynchronous Operations:** Use threading or `asyncio` to prevent the GUI from freezing during camera operations or database queries.
-*   **Enhanced Security:** Hash passwords or sensitive data if user accounts for administrators are added.
-*   **Dockerization:** Package the application in a Docker container for easy deployment and portability.
-*   **Refactor to OOP:** Further break down the code into more specialized classes (e.g., `DatabaseManager`, `FaceProcessor`) for better organization and scalability.
